@@ -40,7 +40,7 @@ namespace DataStructures
             //biscuit.IsSweet = true;
 
             bool isForBrunch = biscuit.SuitableForBrunch();
-            MessageBox.Show(isFoBrunch.ToString());
+            MessageBox.Show(isForBrunch.ToString());
         }
     }
 }
