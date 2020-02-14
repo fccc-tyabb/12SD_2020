@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<game>
+  <datetime>19/11/2011 11:20am</datetime>
+  <point seq="1">
+    <player1>0</player1>
+    <player2>0</player2>
+  </point>
+  <point seq="2">
+    <player1>0</player1>
+    <player2>15</player2>
+  </point>
+  <point seq="3">
+    <player1>15</player1>
+    <player2>15</player2>
+  </point>
+  <point seq="4">
+    <player1>15</player1>
+    <player2>30</player2>
+  </point>
+  <point seq="5">
+    <player1>15</player1>
+    <player2>40</player2>
+  </point>
+  <point seq="6">
+    <player1>30</player1>
+    <player2>40</player2>
+  </point>
+  <point seq="7">
+    <player1>40</player1>
+    <player2>40</player2>
+  </point>
+  <point seq="8">
+    <player1>40</player1>
+    <player2>ADV</player2>
+  </point>
+  <point seq="9">
+    <player1>40</player1>
+    <player2>GAME</player2>
+  </point>
+</game>
