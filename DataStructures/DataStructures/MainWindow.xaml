@@ -8,7 +8,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="176,130,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="DoSomethingButton" Content="Make Biscuits" HorizontalAlignment="Left" Margin="361,48,0,0" VerticalAlignment="Top" Width="229" Click="MakeBiscuitsButton_Click"  Height="26"/>
+        <ListBox x:Name="BiscuitListBox" HorizontalAlignment="Left" Height="256" Margin="361,79,0,0" VerticalAlignment="Top" Width="229">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding Path=Key}" Background="HotPink" Foreground="White" Padding="10,2" Margin="1"/>
+                        <TextBlock Text="{Binding Path=Value.Brand}" Background="YellowGreen" Foreground="White" Padding="10,2" Margin="1"/>
+                        <TextBlock Text="{Binding Path=Value.Name}" Background="DarkBlue" Foreground="White" Padding="10,2" Margin="1"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="SerialiseBiscuits" Content="Cookie Jar" HorizontalAlignment="Left" Margin="361,340,0,0" VerticalAlignment="Top" Width="229" Click="SerialiseBiscuits_Click"  Height="26"/>
 
     </Grid>
 </Window>

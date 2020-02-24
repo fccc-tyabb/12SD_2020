@@ -6,24 +6,22 @@ using System.Threading.Tasks;
 
 namespace DataStructures.Classes
 {
-    public class Biscuit
+    public class Biscuit : BakedGood
     {
-        public string Brand { get; set; }
         public string Flavour{ get; set; }
-        public string Name { get; set; }
         public bool IsSweet { get; set; }
         public bool HasChocolate { get; set; }
-        public List<string> Ingredients { get; set; }
 
         // Constructor
         public Biscuit()
         {
 
         }
-        public Biscuit(string brand, bool isSweet)
+        public Biscuit(string brand, bool isSweet, string name)
         {
             Brand = brand;
             IsSweet = isSweet;
+            Name = name;    
         }
 
         // Methods
@@ -40,6 +38,11 @@ namespace DataStructures.Classes
             //}
             bool b = (Brand == "Arnotts") && IsSweet;
             return b;
+        }
+
+        public override string ToString()
+        {
+            return Brand;
         }
     }
 }
