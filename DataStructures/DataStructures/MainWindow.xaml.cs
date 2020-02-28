@@ -54,9 +54,11 @@ namespace DataStructures
             XDocument xDoc = new XDocument();
             XElement xBiscuits = new XElement("biscuits");
             xDoc.Add(xBiscuits);
-            foreach(string s in biscuits.Keys)
+            foreach (KeyValuePair<string, Biscuit> k in biscuits)
             {
-                xBiscuits.Add(new XElement("biscuit", s));
+                XElement xBiscuit = new XElement("biscuit", k.Key);
+                xBiscuit.Add(new XAttribute("brand", k.Value.Brand));
+                xBiscuits.Add(xBiscuit);
             }
             xDoc.Save(@"C:\Temp\biscuits.xml");
         }
